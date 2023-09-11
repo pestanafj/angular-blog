@@ -1,14 +1,14 @@
 <div class="container-big-card">
   <div class="big-card-photo">
-    <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
+    <img src="{{cardPhoto}}"
     alt="Big Card Image"
     srcset=""
     height="200px">
   </div>
   <div class="big-card-title">
-    <h1><a href="#">Saiu a nova versão do Angular</a></h1>
+    <h1><a [routerLink]="['content', ID]">{{cardTitle}}</a></h1>
   </div>
   <div class="big-card-description">
-    <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt porttitor sem at ultricies. Nam pharetra est et nulla maximus congue. Etiam consequat tortor eu ligula tincidunt porta. Curabitur fringilla magna vel mauris blandit vehicula. </a></p>
+    <p><a [routerLink]="['content', ID]">{{cardDescription}}</a></p>
   </div>
 </div>
